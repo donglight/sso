@@ -2,7 +2,7 @@
   - ### 1. 使用技术(依赖环境):maven,servlet,filter,jsp,tomcat,jdk1.8  
   - ### 2. 包括三个模块:两个client，一个server  
     ```
-    sso-client和sso-client2是单点登录客户端,代码基本一致，**注释看clien1**，页面非常简陋  
+    sso-client和sso-client2是单点登录客户端,代码基本一致，注释看clien1，测试页面非常简单  
     sso-server是单点登录服务端  
     client和server之间的通信用的是apache的HttpClient  
     为了图方便，服务端使用的tomcat的HttpSession作为会话对象，因为tomcat会自动帮我们写一个cookie即jssesionid回浏览器，  
@@ -26,3 +26,6 @@
     
     ![image](https://github.com/donglight/sso/wiki/client.jpg)
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
+    ![image](https://github.com/donglight/sso/wiki/zdd.jpg)
+    ![image](https://github.com/donglight/sso/wiki/login.jpg)
+    ![image](https://github.com/donglight/sso/wiki/login2.jpg)
