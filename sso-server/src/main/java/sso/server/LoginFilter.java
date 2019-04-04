@@ -51,6 +51,7 @@ public class LoginFilter implements Filter {
                 URIBuilder uri;
                 try {
                     uri = new URIBuilder(returnUrl);
+                    //处理token
                     if (!registryMap.containsKey(uri.getScheme()+"://"+uri.getHost()+":"+uri.getPort()+"/")) {
                         resp.sendRedirect(returnUrl + "?token=" + sessionToken);
                     } else {
@@ -68,10 +69,12 @@ public class LoginFilter implements Filter {
             return;
         }
         if (url.contains("login")) {
+            //如果是去登录servlet，放行
             chain.doFilter(request, response);
             return;
         }
         if (token != null) {
+            //去VerifyServlet校验token，放行
             chain.doFilter(request, response);
             return;
         }

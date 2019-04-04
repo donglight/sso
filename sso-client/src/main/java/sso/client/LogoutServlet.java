@@ -14,6 +14,8 @@ public class LogoutServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //服务端Httpclient会发送请求过来，并且带上JSESSIONID，就可以找到之间登录的session对象
+        //然后将其invalidate
         request.getSession().invalidate();
     }
 

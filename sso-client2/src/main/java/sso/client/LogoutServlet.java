@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * 客户端注销servlet
+ * @author donglight
+ */
 @WebServlet(name = "LogoutServlet",urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
 

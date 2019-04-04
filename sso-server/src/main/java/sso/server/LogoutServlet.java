@@ -14,16 +14,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
+
+/**
+ * 单点注销servlet
+ * @author donglight
+ */
 @WebServlet(name = "LogoutServlet", urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        //把当前用户与SSO关联的全局session对象中的token取出来
         String token = (String) request.getSession().getAttribute("token");
-
+        //returnUrl代表是在哪个系统来SSO注销
         String returnUrl = request.getParameter("returnUrl");
         Map<String, Map<String, String>> tokenMap = TokenMap.getTokenMap();
+        //addressMap为在SSO注册过的系统的returnUrl
         Map<String, String> addressMap = null;
         if (token != null) {
             addressMap = tokenMap.remove(token);
@@ -34,8 +41,13 @@ public class LogoutServlet extends HttpServlet {
         try {
             if (addressMap != null) {
                 httpClient = HttpClientBuilder.create().build();
+                //使用httpclient通知登录过的系统消除它们自己的局部会话
                 for (Map.Entry<String, String> entry : addressMap.entrySet()) {
+                    //key为注册的地址(returnUrl),value为jsessionid
+
                     httpPost = new HttpPost(entry.getKey() + "logout?");
+                    //带上cookie:jsessionid去登录过的系统消除局部会话，不然会是httpclient产生的新session
+                    // 不是原来浏览器的jsesionid对应的session对象，造成子系统注销不了
                     httpPost.setHeader("Cookie", "JSESSIONID=" + entry.getValue());
                     httpClient.execute(httpPost);
                 }
@@ -55,7 +67,9 @@ public class LogoutServlet extends HttpServlet {
                 httpClient.close();
             }
         }
+        //清除全局会话
         request.getSession().invalidate();
+        //跳转到登录界面
         response.sendRedirect("http://sso-server:8081/login.jsp?returnUrl="+returnUrl);
     }
 

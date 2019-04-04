@@ -10,6 +10,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 校验token的servlet
+ * @author dongligth
+ */
 @WebServlet(name = "VerifyServlet", urlPatterns = "/verify")
 public class VerifyServlet extends HttpServlet {
 

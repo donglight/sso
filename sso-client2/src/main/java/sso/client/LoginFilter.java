@@ -71,9 +71,6 @@ public class LoginFilter implements Filter {
         // 获得Http客户端(可以理解为:你得先有一个浏览器;注意:实际上HttpClient与浏览器是不一样的)
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
-        // 字符数据最好encoding以下;这样一来，某些特殊字符才能传过去(如:某人的名字就是“&”,不encoding的话,传不过去)
-
-
         // 创建Post请求
         HttpPost httpPost = new HttpPost(verifyUrl);
 

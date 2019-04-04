@@ -38,12 +38,13 @@ public class LoginFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) response;
         HttpSession session = req.getSession();
 
-
+        //注销，放行
         if (req.getRequestURL().toString().contains("logout")) {
             chain.doFilter(request, response);
             return;
         }
 
+        //局部会话存在，这个系统已经登录，放行
         if (session.getAttribute("isLogin") != null) {
             if ((boolean) session.getAttribute("isLogin")) {
                 chain.doFilter(request, response);
@@ -51,9 +52,10 @@ public class LoginFilter implements Filter {
             }
         }
 
-
+        //获取token
         String token = req.getParameter("token");
         if (token != null) {
+            //验证token是否合法路径，使用httpclient去服务端校验
             boolean verifyResult = this.verify("http://sso-server:8081/verify?returnUrl=http://sso-client:8080/&token=" + token + "&JSESSIONID=" + session.getId());
             if (verifyResult) {
                 session.setAttribute("isLogin", true);
@@ -65,6 +67,11 @@ public class LoginFilter implements Filter {
         resp.sendRedirect("http://sso-server:8081/login.jsp?returnUrl=" + req.getRequestURL().toString());
     }
 
+    /**
+     * 使用httpclient请求SSO单点登录服务验证有效性
+     * @param verifyUrl
+     * @return
+     */
     private boolean verify(String verifyUrl) {
 
         // 获得Http客户端(可以理解为:你得先有一个浏览器;注意:实际上HttpClient与浏览器是不一样的)
