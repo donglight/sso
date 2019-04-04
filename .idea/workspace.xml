@@ -6,23 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd544353-c530-4326-acde-a2f51aca61b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/CookieUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/CookieUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/CookieUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/TokenMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/TokenMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="bd544353-c530-4326-acde-a2f51aca61b7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sso-server/target/" />
@@ -48,7 +32,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="993">
+            <state relative-caret-position="287">
               <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
             </state>
           </provider>
@@ -159,7 +143,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -178,76 +162,6 @@
             </path>
             <path>
               <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sso" type="462c0819:PsiDirectoryNode" />
-              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -261,7 +175,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554350900627" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554359389257" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -619,7 +533,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66920000" />
+    <option name="totallyTimeSpent" value="67000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,8 +545,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49741825" visible="true" weight="0.18482251" />
       <window_info id="Structure" order="1" sideWeight="0.5025818" side_tool="true" weight="0.17870256" />
@@ -649,7 +562,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32996634" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.59438205" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501224" side_tool="true" weight="0.36629215" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -987,7 +900,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="993">
+        <state relative-caret-position="287">
           <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
         </state>
       </provider>
