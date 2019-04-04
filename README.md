@@ -24,15 +24,24 @@
       ```http://sso-server:8081/```
   + ### 3. 在浏览器访问项目，注意操作和访问路径 
     - 访问**sso-client:8080/index.jsp**,被filter拦截，发现没登录，跳转到sso-server的login.jsp页面
+    
     ![image](https://github.com/donglight/sso/wiki/client.jpg)
+    
     - 访问**sso-client2:8080/index.jsp**,被filter拦截，发现没登录，跳转到sso-server的login.jsp页面
+    
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
+    
     - 输入**zdd**，点击提交去sso-server的LoginServlet登录
+    
     ![image](https://github.com/donglight/sso/wiki/zdd.jpg)
-    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称为**全局会话**()，在浏览器中会有一个该域名下的
-    jsessionid标识这个session。然后回调returnUrl，客户端Filter拦截到此请求发现token不为空，于是带着token(或ticket)去
-    sso校验，token有效则创建**局部会话**,(局部会话的作用是:已经登录过的系统不用每次都再去访问SSO，有它就说明已经登录了。)
-    然后放行，访问到的对应的页面
+    
+    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称为**全局会话**(单点登录的关键，用户同一个浏览器下，
+    登录了一个系统，其他相关系统就不需要登录了)，在浏览器中会有一个该域名下的jsessionid标识这个session。然后回调returnUrl，
+    客户端Filter拦截到此请求发现token不为空，于是带着token(或ticket)去sso校验，token有效则创建**局部会话**,(局部会话的作
+    用是:已经登录过的系统不用每次都再去访问SSO，有它就说明已经登录了。)然后放行，访问到的对应的页面  
+    
     ![image](https://github.com/donglight/sso/wiki/login.jpg)
+    
     ![image](https://github.com/donglight/sso/wiki/login2.jpg)
+    
     - **单点注销**，点击注销按钮，服务器通知所有系统消除局部会话，最后消除全局会话
