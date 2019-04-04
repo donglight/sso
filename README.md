@@ -1,5 +1,5 @@
 # servlet单点登录和单点注销demo概要说明  
-  - ### 1. 使用技术(依赖环境):maven,servlet,filter,jsp,tomcat,jdk1.8  
+  - ### 1. 使用技术(依赖环境):jdk1.8,maven,tomcat,servlet,filter,jsp
   - ### 2. 包括三个模块:两个client，一个server  
     ```
     sso-client和sso-client2是单点登录客户端,代码基本一致，注释看clien1，测试页面非常简单  
@@ -22,10 +22,13 @@
       ```http://sso-client2:8082/```
       - **sso地址:**
       ```http://sso-server:8081/```
-  + ### 3. 在浏览器访问项目，注意访问路径 
-    
+  + ### 3. 在浏览器访问项目，注意操作和访问路径 
+    - 访问**sso-client:8080/index.jsp**,被filter拦截，发现没登录，跳转到sso-server的login.jsp页面
     ![image](https://github.com/donglight/sso/wiki/client.jpg)
+    - 访问**sso-client2:8080/index.jsp**,被filter拦截，发现没登录，跳转到sso-server的login.jsp页面
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
+    - 输入**zdd**，点击提交去sso-server的LoginServlet登录
     ![image](https://github.com/donglight/sso/wiki/zdd.jpg)
+    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称作全局会话，在浏览器中会有一个该域名下的jsessionid标识这个session
     ![image](https://github.com/donglight/sso/wiki/login.jpg)
     ![image](https://github.com/donglight/sso/wiki/login2.jpg)
