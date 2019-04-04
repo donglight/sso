@@ -16,6 +16,13 @@
     127.0.0.1 sso-server
     ```
   - ### 2. 在ide使用tomcat运行项目(我使用的是idea，请读者自行配置)   
-  + ### 3. 在浏览器访问项目，注意访问路径  
+    - **client1地址1:**
+      ```http://sso-client:8080/```
+      - **client2地址2:**
+      ```http://sso-client2:8082/```
+      - **sso地址3:**
+      ```http://sso-server:8081/```
+  + ### 3. 在浏览器访问项目，注意访问路径,tomcat域名和端口可以自己配置  
+    
     ![image](https://github.com/donglight/sso/wiki/client.jpg)
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
