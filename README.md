@@ -29,6 +29,7 @@
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
     - 输入**zdd**，点击提交去sso-server的LoginServlet登录
     ![image](https://github.com/donglight/sso/wiki/zdd.jpg)
-    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称作全局会话，在浏览器中会有一个该域名下的jsessionid标识这个session
+    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称作全局会话，在浏览器中会有一个该域名下的jsessionid标识这个session。
+    回调returnUrl，客户端Filter拦截到此请求发现token不为空，于是带着token(或ticket)去sso校验，token有效则创建**局部会话**,且放行，访问到的对应的页面
     ![image](https://github.com/donglight/sso/wiki/login.jpg)
     ![image](https://github.com/donglight/sso/wiki/login2.jpg)
