@@ -20,7 +20,7 @@
       ```http://sso-client:8080/```
       - **client2地址:**
       ```http://sso-client2:8082/```
-      - **sso地址3:**
+      - **sso地址:**
       ```http://sso-server:8081/```
   + ### 3. 在浏览器访问项目，注意访问路径 
     
