@@ -16,7 +16,7 @@
     127.0.0.1 sso-server
     ```
   - ### 2. 在ide使用tomcat运行项目(我使用的是idea，请读者自行配置)   
-    - **client1地址1:**
+      - **client1地址1:**
       ```http://sso-client:8080/```
       - **client2地址2:**
       ```http://sso-client2:8082/```
