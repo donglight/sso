@@ -50,4 +50,4 @@
     
     # 结束语:
     ## 本demo只是简单实现一下sso，目的是理解sso的原理，省略了必要的许多细节操作。而且由于个人水平有限，有很多地方有错误或遗漏，与下面的官方的cas    图有所出入,比如一个用户认证的token只有一个，而下图中的ticket(对应我的token)第二个子系统去SSO会带上不一样的ticket，所以请各位谅解，也可以留言    或发送email到414882567@qq.com指出我的错误，谢谢各位的观看。
-   ![image](https://github.com/donglight/sso/wiki/CAS.jpg)
+   ![image](https://github.com/donglight/sso/wiki/CAS.png)
