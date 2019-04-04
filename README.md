@@ -8,7 +8,7 @@
     为了图方便，服务端使用的tomcat的HttpSession作为会话对象，因为tomcat会自动帮我们写一个cookie即jssesionid回浏览器，  
     当然也可以自己用实现session机制(缓存，redis等)
     ```
-## demo测试:  
+# demo测试:  
   - ### 1. hosts文件修改(保证不同域名，这样cookie(这里指的jssessionid)不会覆盖，都是localhost的话，三个模块的cookie会互相覆盖，看不到单点登录的效果)
     ```
     127.0.0.1 sso-client  
@@ -29,8 +29,10 @@
     ![image](https://github.com/donglight/sso/wiki/client2.jpg)
     - 输入**zdd**，点击提交去sso-server的LoginServlet登录
     ![image](https://github.com/donglight/sso/wiki/zdd.jpg)
-    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称为**全局会话**，在浏览器中会有一个该域名下的
+    - SSO校验用户名通过，在tomcat自动创建的会话中保存token，这个会话称为**全局会话**()，在浏览器中会有一个该域名下的
     jsessionid标识这个session。然后回调returnUrl，客户端Filter拦截到此请求发现token不为空，于是带着token(或ticket)去
-    sso校验，token有效则创建**局部会话**,且放行，访问到的对应的页面
+    sso校验，token有效则创建**局部会话**,(局部会话的作用是:已经登录过的系统不用每次都再去访问SSO，有它就说明已经登录了。)
+    然后放行，访问到的对应的页面
     ![image](https://github.com/donglight/sso/wiki/login.jpg)
     ![image](https://github.com/donglight/sso/wiki/login2.jpg)
+    - **单点注销**，点击注销按钮，服务器通知所有系统消除局部会话，最后消除全局会话
