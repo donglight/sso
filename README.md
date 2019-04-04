@@ -17,3 +17,4 @@
     ```
   - ### 2. 在ide使用tomcat运行项目(我使用的是idea，请读者自行配置)   
   + ### 3. 在浏览器访问项目，注意访问路径  
+  ![image](https://raw.githubusercontent.com/wiki/donglight/sso/login.png)
