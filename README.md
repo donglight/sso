@@ -9,7 +9,7 @@
     当然也可以自己用实现session机制(缓存，redis等)
     ```
 ## demo测试:  
-  - ### 1. hosts文件修改(保证不同域名，这样cookie(这里指的jssessionid)不会覆盖，都是localhost的话，cookie会覆盖，出不来单点登录的效果)  
+  - ### 1. hosts文件修改(保证不同域名，这样cookie(这里指的jssessionid)不会覆盖，都是localhost的话，cookie会覆盖，看不到单点登录的效果)  
     ```
     127.0.0.1 sso-client  
     127.0.0.1 sso-client2   
