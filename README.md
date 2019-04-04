@@ -44,4 +44,6 @@
     
     ![image](https://github.com/donglight/sso/wiki/login2.jpg)
     
-    - **单点注销**，点击注销按钮，服务器通知所有系统消除局部会话，最后消除全局会话
+    - **单点注销**，点击注销按钮，服务器通知所有系统消除局部会话，最后消除全局会话。用HttpClient遍历请求所要注销的用户的session
+    对象中保存的token所对应的已经登录的子系统的地址，注意要带上注销用户的JSSESSIONID，才能消除局部会话，否则清除的只是HttpClient
+    与个个子系统之间的会话，导致注销不成功。
