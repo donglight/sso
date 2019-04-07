@@ -1,6 +1,7 @@
 # servlet单点登录和单点注销demo概要说明  
-  - ### 1. 使用技术(依赖环境):jdk1.8,maven,tomcat,servlet,filter,jsp
-  - ### 2. 包括三个模块:两个client，一个server  
+  - ### 1. 目的:加深理解SSO过程和原理
+  - ### 2. 使用技术(依赖环境):jdk1.8,maven,tomcat,servlet,filter,jsp
+  - ### 3. 包括三个模块:两个client，一个server  
     ```
     sso-client和sso-client2是单点登录客户端,代码基本一致，注释看clien1，测试页面非常简单  
     sso-server是单点登录服务端  

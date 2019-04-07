@@ -31,7 +31,7 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        HttpSession session = req.getSession();
+        HttpSession session = req.getSession(false);
         String returnUrl = req.getParameter("returnUrl");
         String token = req.getParameter("token");
 
@@ -42,32 +42,36 @@ public class LoginFilter implements Filter {
             chain.doFilter(request, response);
             return;
         }
-        //判断用户浏览器是否已经登陆过sso,即单点登录系统，
+        //判断用户浏览器是否已经登陆过sso
         //如果已经登陆过就不需要重新登录，重定向到returnUrl
-        String sessionToken = (String) session.getAttribute("token");
-        if (sessionToken != null) {
-            if (returnUrl != null) {
-                Map<String, String> registryMap = TokenMap.getTokenMap().get(sessionToken);
-                URIBuilder uri;
-                try {
-                    uri = new URIBuilder(returnUrl);
-                    //处理token
-                    if (!registryMap.containsKey(uri.getScheme()+"://"+uri.getHost()+":"+uri.getPort()+"/")) {
-                        resp.sendRedirect(returnUrl + "?token=" + sessionToken);
-                    } else {
-                        resp.sendRedirect(returnUrl);
+        if(session != null){
+            String sessionToken = (String) session.getAttribute("token");
+            if (sessionToken != null) {
+                if (returnUrl != null) {
+                    Map<String, String> registryMap = TokenMap.getTokenMap().get(sessionToken);
+                    URIBuilder uri;
+                    try {
+                        uri = new URIBuilder(returnUrl);
+                        //处理token
+                        if (!registryMap.containsKey(uri.getScheme()+"://"+uri.getHost()+":"+uri.getPort()+"/")) {
+                            resp.sendRedirect(returnUrl + "?token=" + sessionToken);
+                        } else {
+                            resp.sendRedirect(returnUrl);
+                        }
+                    } catch (URISyntaxException e) {
+                        e.printStackTrace();
+                    } finally {
+                        uri = null;
                     }
-                } catch (URISyntaxException e) {
-                    e.printStackTrace();
-                } finally {
-                    uri = null;
-                }
 
+                    return;
+                }
+                chain.doFilter(request, response);
                 return;
             }
-            chain.doFilter(request, response);
-            return;
         }
+
+
         if (url.contains("login")) {
             //如果是去登录servlet，放行
             chain.doFilter(request, response);

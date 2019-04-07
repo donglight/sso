@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd544353-c530-4326-acde-a2f51aca61b7" name="Default Changelist" comment="" />
+    <list default="true" id="bd544353-c530-4326-acde-a2f51aca61b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sso-server/target/" />
@@ -19,30 +25,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="249">
+              <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+            <state relative-caret-position="297">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java">
+        <entry file="file://$PROJECT_DIR$/sso-server/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="336">
+              <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -104,16 +122,17 @@
         <option value="$PROJECT_DIR$/sso-client2/web/index.jsp" />
         <option value="$PROJECT_DIR$/sso-client/web/index.jsp" />
         <option value="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" />
         <option value="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/CookieUtils.java" />
-        <option value="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" />
         <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/TokenMap.java" />
         <option value="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java" />
         <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" />
         <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java" />
+        <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java" />
       </list>
     </option>
   </component>
@@ -143,7 +162,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -153,12 +172,83 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="sso" type="b2602c69:ProjectViewProjectNode" />
               <item name="sso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-client2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-client2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-client2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-client2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-client2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sso" type="462c0819:PsiDirectoryNode" />
+              <item name="sso-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sso" type="b2602c69:ProjectViewProjectNode" />
@@ -169,13 +259,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554359389257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554610110205" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -184,18 +273,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\JetBrains\project\sso\sso-client\src\main\java\sso\client" />
-      <recent name="D:\Java\JetBrains\project\sso\sso-server\src\main\java\sso\server" />
-      <recent name="D:\Java\JetBrains\project\sso\sso-client2\web" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\JetBrains\project\sso\sso-client\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="sso.client" />
       <recent name="sso.server" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\JetBrains\project\sso\sso-client\web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\JetBrains\project\sso" />
+      <recent name="D:\Java\JetBrains\project\sso\sso-client\src\main\java\sso\client" />
+      <recent name="D:\Java\JetBrains\project\sso\sso-server\src\main\java\sso\server" />
+      <recent name="D:\Java\JetBrains\project\sso\sso-client2\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -529,11 +619,12 @@
       <workItem from="1554346087800" duration="3609000" />
       <workItem from="1554351784916" duration="158000" />
       <workItem from="1554352198850" duration="3544000" />
+      <workItem from="1554606975494" duration="3004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67000000" />
+    <option name="totallyTimeSpent" value="70117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,9 +636,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49741825" visible="true" weight="0.18482251" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49741825" visible="true" weight="0.1872705" />
       <window_info id="Structure" order="1" sideWeight="0.5025818" side_tool="true" weight="0.17870256" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -557,12 +648,12 @@
       <window_info id="Web" order="7" sideWeight="0.5031348" side_tool="true" weight="0.17870256" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49877602" weight="0.27752808" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49816403" weight="0.3479237" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49877602" weight="0.3213483" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49816403" visible="true" weight="0.347191" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.59438205" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.19213483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501224" side_tool="true" weight="0.36629215" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
@@ -584,6 +675,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -790,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sso-server/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sso-client2/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -833,16 +935,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/CookieUtils.java" />
-    <entry file="file://$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -850,34 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/TokenMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -891,17 +959,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java">
+    <entry file="file://$PROJECT_DIR$/sso.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="24">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/TokenMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-server/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="297">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-server/src/main/java/sso/server/VerifyServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-client2/src/main/java/sso/client/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sso-client/src/main/java/sso/client/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="62" column="43" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

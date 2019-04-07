@@ -36,7 +36,9 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        HttpSession session = req.getSession();
+
+        //req.getSession(false)，false参数的含义是，如果已经创建了session就返回session，没有创建session就返回null
+        HttpSession session = req.getSession(false);
 
         //注销，放行
         if (req.getRequestURL().toString().contains("logout")) {
@@ -45,8 +47,9 @@ public class LoginFilter implements Filter {
         }
 
         //局部会话存在，这个系统已经登录，放行
-        if (session.getAttribute("isLogin") != null) {
-            if ((boolean) session.getAttribute("isLogin")) {
+        if (session != null) {
+            boolean isLogin = (boolean)session.getAttribute("isLogin");
+            if (isLogin) {
                 chain.doFilter(request, response);
                 return;
             }
@@ -56,6 +59,8 @@ public class LoginFilter implements Filter {
         String token = req.getParameter("token");
         if (token != null) {
             //验证token是否合法路径，使用httpclient去服务端校验
+            //req.getSession(true) true的含义是，如果没有创建session就创建一个新的，要传递jsessionid去服务端保存，jsessionid是在服务端发起注销请求时用
+            session = req.getSession(true);
             boolean verifyResult = this.verify("http://sso-server:8081/verify?returnUrl=http://sso-client:8080/&token=" + token + "&JSESSIONID=" + session.getId());
             if (verifyResult) {
                 session.setAttribute("isLogin", true);

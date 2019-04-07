@@ -36,7 +36,7 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse resp = (HttpServletResponse) response;
-        HttpSession session = req.getSession();
+        HttpSession session = req.getSession(false);
 
 
         if (req.getRequestURL().toString().contains("logout")) {
@@ -44,8 +44,9 @@ public class LoginFilter implements Filter {
             return;
         }
 
-        if (session.getAttribute("isLogin") != null) {
-            if ((boolean) session.getAttribute("isLogin")) {
+        if (session != null) {
+            boolean isLogin = (boolean)session.getAttribute("isLogin");
+            if (isLogin) {
                 chain.doFilter(request, response);
                 return;
             }
@@ -55,6 +56,7 @@ public class LoginFilter implements Filter {
 
         String token = req.getParameter("token");
         if (token != null) {
+            session = req.getSession(true);
             boolean verifyResult = this.verify("http://sso-server:8081/verify?returnUrl=http://sso-client2:8082/&token=" + token + "&JSESSIONID=" + session.getId());
             if (verifyResult) {
                 session.setAttribute("isLogin", true);
